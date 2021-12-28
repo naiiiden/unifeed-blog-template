@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+.avatar {
+  max-width: 48px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,7 +105,130 @@ header nav .nav-ul li a.subscribe {
 
 @media screen and (min-width: 1024px) {
   header {
-    padding: 3rem;
+    padding: 2rem 5rem;
+  }
+}
+
+main {
+  padding: 1rem;
+}
+
+main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+main article .text_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+main article img {
+  max-height: 10rem;
+}
+
+main article p {
+  font-weight: 600;
+  color: #545454;
+}
+
+main article .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main article .author .name_job {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .9rem;
+}
+
+main article .author .name_job .name {
+  color: #000;
+  font-weight: 600;
+}
+
+main article .author .name_job .job {
+  color: #545454;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 1rem 2rem;
+  }
+  main article {
+    gap: .5rem;
+  }
+  main article h1 {
+    font-size: 1.75rem;
+  }
+  main article p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 1rem 5rem;
+  }
+  main article {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3rem;
+  }
+  main article .text_column {
+    gap: .75rem;
+  }
+  main article img {
+    width: 37.5%;
+    max-height: 13.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main article img {
+    width: 30%;
+  }
+  main article .text_column {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main article .text_column h1 {
+    font-size: 2rem;
+    width: 70%;
+  }
+  main article .text_column .tldr {
+    font-size: 1.1rem;
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */
