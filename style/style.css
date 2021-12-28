@@ -10,9 +10,98 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: Manrope, sans-serif;
+  position: relative;
 }
 
 img {
   max-width: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+header button {
+  border: none;
+  background: transparent;
+  position: fixed;
+  right: 0;
+  z-index: 99;
+  padding: 1rem;
+}
+
+header nav .nav-ul {
+  display: none;
+}
+
+header nav .nav-ul.show {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  position: fixed;
+  -webkit-backdrop-filter: blur(0.25rem);
+          backdrop-filter: blur(0.25rem);
+}
+
+header nav .nav-ul li {
+  list-style-type: none;
+}
+
+header nav .nav-ul li a {
+  text-decoration: none;
+  color: #686767;
+  font-weight: 500;
+}
+
+header nav .nav-ul li a.subscribe {
+  border-radius: 5px;
+  padding: .5rem;
+  background: rgba(255, 166, 0, 0.849);
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
