@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
     font-family: Manrope, sans-serif;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 img {
