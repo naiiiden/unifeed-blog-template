@@ -1,4 +1,4 @@
-main {
+.main {
     padding: 1rem;
     
     article {
@@ -46,7 +46,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    main {
+    .main {
         padding: 1rem 2rem;
 
         article {
@@ -64,7 +64,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    main {
+    .main {
         padding: 1rem 5rem;
 
         article {
@@ -85,7 +85,7 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-    main {
+    .main {
         article {
             img {
                 width: 30%;

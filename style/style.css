@@ -86,88 +86,88 @@ header nav .nav-ul li a.subscribe {
     padding: 2rem 5rem;
   }
 }
-main {
+.main {
   padding: 1rem;
 }
-main article {
+.main article {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main article .text_column {
+.main article .text_column {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-main article img {
+.main article img {
   max-height: 10rem;
 }
-main article p {
+.main article p {
   font-weight: 600;
   color: #545454;
 }
-main article .author {
+.main article .author {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-main article .author .name_job {
+.main article .author .name_job {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
 }
-main article .author .name_job .name {
+.main article .author .name_job .name {
   color: #000;
   font-weight: 600;
 }
-main article .author .name_job .job {
+.main article .author .name_job .job {
   color: #545454;
   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-  main {
+  .main {
     padding: 1rem 2rem;
   }
-  main article {
+  .main article {
     gap: 0.5rem;
   }
-  main article h1 {
+  .main article h1 {
     font-size: 1.75rem;
   }
-  main article .tldr {
+  .main article .tldr {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  main {
+  .main {
     padding: 1rem 5rem;
   }
-  main article {
+  .main article {
     align-items: center;
     flex-direction: row;
     gap: 3rem;
   }
-  main article .text_column {
+  .main article .text_column {
     gap: 0.75rem;
   }
-  main article img {
+  .main article img {
     width: 37.5%;
     max-height: 13.5rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  main article img {
+  .main article img {
     width: 30%;
   }
-  main article .text_column {
+  .main article .text_column {
     justify-content: space-between;
   }
-  main article .text_column h1 {
+  .main article .text_column h1 {
     font-size: 2rem;
     width: 70%;
   }
-  main article .text_column .tldr {
+  .main article .text_column .tldr {
     font-size: 1.1rem;
     width: 70%;
   }
